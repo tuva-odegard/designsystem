@@ -29,7 +29,9 @@
     "lerna": "lerna",
     "prepare": "husky",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "sync-tokens-to-figma": "ts-node packages/ffe-core/scripts/figma-api/sync_tokens_to_figma.ts",
+    "sync-figma-to-tokens": "ts-node packages/ffe-core/scripts/figma-api/sync_figma_to_tokens.ts"
   },
   "lint-staged": {
     "{packages,buildtool,component-overview,linting,test,.storybook}/**/*.{js,jsx,ts,tsx,json,css,less,md}": [
@@ -83,6 +85,7 @@
     "react-dom": "^18.2.0",
     "rimraf": "^6.0.1",
     "storybook": "^8.2.7",
+    "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   },
   "eslintConfig": {
